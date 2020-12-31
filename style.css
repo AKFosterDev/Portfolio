@@ -492,8 +492,8 @@ section .title::after {
 	color: crimson;
 	background: none;
 }
-#rc-anchor-container {
-	margin-bottom: 10px;
+.contact .right form .field .recaptcha {
+	margin: auto;
 }
 
 /* Footer Section */
