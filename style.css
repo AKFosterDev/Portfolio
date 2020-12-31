@@ -532,6 +532,9 @@ footer span a:hover {
 		height: 350px;
 		width: 350px;
 	}
+	.projects .project-content .card .box {
+		height: auto;
+	}
 	.skills .skills-content .card i {
 		font-size: 1.5rem;
 	}
