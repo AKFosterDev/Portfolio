@@ -397,6 +397,9 @@ section .title::after {
 .contact .title::after {
 	content: 'get in touch';
 }
+.contact .title::after {
+	content: 'get in touch';
+}
 .contact .contact-content .column {
 	width: calc(50% - 30px);
 }
@@ -488,6 +491,9 @@ section .title::after {
 .contact .right form .button button:hover {
 	color: crimson;
 	background: none;
+}
+.contact .right form .recaptcha {
+	margin-bottom: 10px;
 }
 
 /* Footer Section */
