@@ -487,14 +487,15 @@ section .title::after {
 	border-radius: 6px;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	margin-top: 50px;
 }
 .contact .right form .button button:hover {
 	color: crimson;
 	background: none;
 }
-.g-recaptcha div:first-child {
+/* .g-recaptcha div:first-child {
 	margin-bottom: 10px;
-}
+} */
 
 /* Footer Section */
 footer {
