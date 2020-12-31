@@ -492,7 +492,7 @@ section .title::after {
 	color: crimson;
 	background: none;
 }
-.contact .right form .field .recaptcha {
+.g-recaptcha div:first-child {
 	margin: auto;
 }
 
