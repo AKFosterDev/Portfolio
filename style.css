@@ -219,6 +219,7 @@ section .title::after {
 }
 
 .home .social i {
+	font-size: 3rem;
 	color: crimson;
 	margin: 15px;
 }
@@ -657,6 +658,10 @@ footer span a:hover {
 	.skills .skills-content .card p {
 		font-size: 1rem;
 	}
+	.home {
+		background: url('img/sm_banner.png') no-repeat;
+		max-width: 991px;
+	}
 }
 @media (max-width: 947px) {
 	.navbar .logo img {
@@ -692,6 +697,7 @@ footer span a:hover {
 		margin: 20px 0;
 		font-size: 25px;
 	}
+
 	.home .home-content .text-2 {
 		font-size: 70px;
 	}
@@ -735,7 +741,7 @@ footer span a:hover {
 		padding: 0 23px;
 	}
 	.home {
-		background: url('img/md_banner.png') no-repeat;
+		background: url('img/sm_banner.png') no-repeat;
 		max-width: 690px;
 	}
 	.home .home-content .text-2 {
@@ -772,6 +778,9 @@ footer span a:hover {
 	}
 	.home .home-content .text-3 {
 		font-size: 24px;
+	}
+	.home .home-content .social i {
+		font-size: 2rem;
 	}
 	.about .about-content .right .text {
 		font-size: 19px;
