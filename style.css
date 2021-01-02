@@ -658,10 +658,6 @@ footer span a:hover {
 	.skills .skills-content .card p {
 		font-size: 1rem;
 	}
-	.home {
-		background: url('img/sm_banner.png') no-repeat;
-		max-width: 991px;
-	}
 }
 @media (max-width: 947px) {
 	.navbar .logo img {
