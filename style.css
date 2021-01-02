@@ -52,6 +52,12 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 }
+.projects .project-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
 section .title {
 	position: relative;
 	text-align: center;
@@ -288,29 +294,25 @@ section .title::after {
 	text-align: center;
 	border-radius: 6px;
 	padding: 20px 25px;
-	cursor: pointer;
 	transition: all 0.3s ease;
 	margin-bottom: 25px;
+	display: flex;
 }
 .projects .project-content .card:hover {
 	background: crimson;
 }
 .projects .project-content .card .box {
 	transition: all 0.3s ease;
-	height: 337px;
+	height: auto;
 }
 .projects .project-content .card:hover .box {
 	transform: scale(1.05);
 }
 .projects .project-content .card img {
 	width: calc(100% - 5px);
+	height: 10rem;
 	transition: color 0.3s ease;
 }
-/* .projects .project-content .card i {
-	font-size: 50px;
-	color: crimson;
-	transition: color 0.3s ease;
-} */
 .projects .project-content .card:hover i {
 	color: #fff;
 }
@@ -319,7 +321,25 @@ section .title::after {
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
+.projects .project-content .card .text p {
+	flex-grow: 1;
+}
+/* .projects .project-content .card .tooltip::before,
+.projects .project-content .card .tooltip::after {
+	position: absolute;
+	top: -0.25rem;
+	height: 25px;
+	width: 25px;
+	background: #111;
+	content: '';
+	/* content: attr(data-tooltip); */
 
+.projects .project-content .card i {
+	position: relative;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 5px;
+}
 .projects .project-content .card .box .btn-container button {
 	display: inline-block;
 	background: crimson !important;
@@ -327,8 +347,7 @@ section .title::after {
 	font-size: 0.5rem;
 	font-weight: 500;
 	padding: 4px;
-	margin: 15px 5px 10px 5px;
-
+	margin: 0px 5px;
 	border-radius: 6px;
 	border: 2px solid #fff;
 }
@@ -336,6 +355,7 @@ section .title::after {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+	margin: 10px 5px 10px 5px;
 }
 
 /* Skills Section */
@@ -614,7 +634,9 @@ footer span a:hover {
 		width: calc(50% - 10px);
 		margin-bottom: 20px;
 	}
-
+	.projects .project-content .card img {
+		height: 9rem;
+	}
 	.contact .contact-content .column {
 		width: 100%;
 		margin-bottom: 35px;
@@ -624,6 +646,10 @@ footer span a:hover {
 @media (max-width: 690px) {
 	.max-width {
 		padding: 0 23px;
+	}
+	.home {
+		background: url('img/banner.png') no-repeat;
+		width: 690px;
 	}
 	.home .home-content .text-2 {
 		font-size: 60px;
@@ -637,6 +663,9 @@ footer span a:hover {
 	.projects .project-content .card,
 	.skills .skills-content .card {
 		width: 100%;
+	}
+	.projects .project-content .card img {
+		height: 14rem;
 	}
 	.skills .skills-content .card {
 		height: auto;
