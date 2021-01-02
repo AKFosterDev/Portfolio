@@ -324,16 +324,103 @@ section .title::after {
 .projects .project-content .card .text p {
 	flex-grow: 1;
 }
-/* .projects .project-content .card .tooltip::before,
-.projects .project-content .card .tooltip::after {
-	position: absolute;
-	top: -0.25rem;
-	height: 25px;
-	width: 25px;
-	background: #111;
-	content: '';
-	/* content: attr(data-tooltip); */
+.projects .project-content .card .tooltip {
+	display: inline-block;
+	position: relative;
+	border-bottom: 1px dotted #666;
+	text-align: left;
+}
 
+.projects .project-content .card .tooltip .top {
+	min-width: 200px;
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	padding: 10px 20px;
+	color: #ffffff;
+	background-color: #222222;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.projects .project-content .card .tooltip:hover .top {
+	visibility: visible;
+	opacity: 1;
+}
+
+.projects .project-content .card .tooltip .top i {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12px;
+	width: 24px;
+	height: 12px;
+	overflow: hidden;
+}
+
+.projects .project-content .card .tooltip .top i::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 50%;
+	transform: translate(-50%, -90%) rotate(45deg);
+	background-color: #222222;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+.projects .project-content .card .tooltip .bottom {
+	min-width: 200px;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 10px 20px;
+	color: #ffffff;
+	background-color: #222222;
+	font-weight: normal;
+	font-size: 13px;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 99999999;
+	box-sizing: border-box;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.projects .project-content .card .tooltip:hover .bottom {
+	visibility: visible;
+	opacity: 1;
+}
+
+.projects .project-content .card .tooltip .bottom i {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -12px;
+	width: 24px;
+	height: 12px;
+	overflow: hidden;
+}
+
+.projects .project-content .card .tooltip .bottom i::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 50%;
+	transform: translate(-50%, 30%) rotate(45deg);
+	background-color: #222222;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
 .projects .project-content .card i {
 	position: relative;
 	color: #fff;
@@ -648,7 +735,7 @@ footer span a:hover {
 		padding: 0 23px;
 	}
 	.home {
-		background: url('img/banner.png') no-repeat;
+		background: url('img/sm_banner.png') no-repeat;
 		width: 690px;
 	}
 	.home .home-content .text-2 {
