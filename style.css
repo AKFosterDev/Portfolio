@@ -310,8 +310,8 @@ section .title::after {
 	transform: scale(1.05);
 }
 .projects .project-content .card img {
-	width: calc(100% - 5px);
-	height: 10rem;
+	max-width: 100%;
+	height: auto;
 	transition: color 0.3s ease;
 }
 .projects .project-content .card:hover i {
@@ -729,7 +729,8 @@ footer span a:hover {
 		margin-bottom: 20px;
 	}
 	.projects .project-content .card img {
-		height: 9rem;
+		max-width: 100%;
+		height: auto;
 	}
 	.projects .project-content .card .text {
 		font-size: 1.5rem;
@@ -753,7 +754,8 @@ footer span a:hover {
 	}
 	.home {
 		background: url('img/sm_banner.png') no-repeat;
-		max-width: 690px;
+		max-width: 100%;
+		height: auto;
 	}
 	.home .home-content .text-2 {
 		font-size: 60px;
@@ -769,7 +771,8 @@ footer span a:hover {
 		width: 100%;
 	}
 	.projects .project-content .card img {
-		height: 14rem;
+		max-width: 100%;
+		height: auto;
 	}
 	.skills .skills-content .card {
 		height: auto;
@@ -777,12 +780,10 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-	/* .navbar .logo img {
-		height: 25px;
-	} */
 	.home {
 		background: url('img/sm_banner.png') no-repeat;
-		width: 500px;
+		max-width: 100%;
+		height: auto;
 	}
 	.home .home-content .text-2 {
 		font-size: 45px;
