@@ -218,13 +218,13 @@ section .title::after {
 	background: none;
 }
 
-.home .social i {
+.home .home-content .social i {
 	font-size: 3rem;
 	color: crimson;
 	margin: 15px;
 }
 
-.home .social i:hover {
+.home .home-content .social i:hover {
 	color: white;
 }
 
