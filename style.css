@@ -16,14 +16,14 @@ html {
 	color: #fff;
 } */
 
-a[x-apple-data-detectors]:visited {
+/* a[x-apple-data-detectors] {
 	color: #fff !important;
 	text-decoration: none !important;
 	font-size: inherit !important;
 	font-family: inherit !important;
 	font-weight: inherit !important;
 	line-height: inherit !important;
-}
+} */
 
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
