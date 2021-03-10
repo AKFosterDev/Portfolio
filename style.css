@@ -555,6 +555,10 @@ section .title::after {
 	color: #fff;
 }
 
+.contact .contact-content .info .sub-title a {
+	color: #fff;
+}
+
 .contact .right form .fields {
 	display: flex;
 }
