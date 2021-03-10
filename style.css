@@ -16,7 +16,7 @@ html {
 	color: #fff;
 } */
 
-a[x-apple-data-detectors] {
+a[x-apple-data-detectors]:visited {
 	color: #fff !important;
 	text-decoration: none !important;
 	font-size: inherit !important;
@@ -563,6 +563,7 @@ section .title::after {
 .contact .contact-content .info .sub-title {
 	color: #fff;
 }
+
 .contact .right form .fields {
 	display: flex;
 }
