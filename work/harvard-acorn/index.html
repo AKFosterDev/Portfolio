@@ -74,7 +74,10 @@ html.js .to-top:not(.show){opacity:0;visibility:hidden}
 </section>
 
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
-<div role="img" aria-label="Placeholder for a screenshot of the ACORN records list" style="height: 560px; border-radius: 16px; background: #E4E4E0; border: 2px dashed #B9B9B3; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 14px; color: #555552">[Screenshot coming: Records List]</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img src="/assets/acorn-records.webp" width="1199" height="497" alt="ACORN Records List in the new React front end: a sortable, filterable table of conservation records with ID, type, title, author, call numbers, status, proposal approval and expected return date, with pagination" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #DCDCD8; box-shadow: 0 8px 28px rgba(0,0,0,0.08)">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">The Records List, rebuilt in React and Material UI</figcaption>
+</figure>
 </div>
 
 <section aria-label="Results" style="max-width: 1200px; margin: 0 auto; padding: 48px 32px 0">
@@ -105,6 +108,20 @@ html.js .to-top:not(.show){opacity:0;visibility:hidden}
 </section>
 
 
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 36px 28px; align-items: start">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img loading="lazy" decoding="async" src="/assets/acorn-record.webp" width="1198" height="555" alt="ACORN record detail screen with tabs for Detail, Status, Proposal, Report and Files, showing repository, project, purpose, assigned staff and repository info fields; staff names are blurred" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #DCDCD8; box-shadow: 0 8px 28px rgba(0,0,0,0.08)">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Record detail with tabbed workflow (staff names blurred)</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img loading="lazy" decoding="async" src="/assets/acorn-transfer.webp" width="1198" height="320" alt="ACORN Transfer Form, step 1 of a 4-step wizard, with fields for transfer type, from, to, by and date" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #DCDCD8; box-shadow: 0 8px 28px rgba(0,0,0,0.08)">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Transfers as a four-step form</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px; grid-column: 1 / -1">
+<img loading="lazy" decoding="async" src="/assets/acorn-admin.webp" width="1200" height="368" alt="ACORN admin list of reusable proposal and report text, with edit and delete actions, owner and global columns; owner names are blurred" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #DCDCD8; box-shadow: 0 8px 28px rgba(0,0,0,0.08)">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Admin lists for reusable proposal and report text (names blurred)</figcaption>
+</figure>
+</div>
 <section style="max-width: 1000px; margin: 0 auto; padding: 56px 32px 32px; display: flex; flex-wrap: wrap; gap: 48px">
 <h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">Accessibility</h2>
 <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 18px; font-size: 18px; line-height: 1.75; color: #2A2A28">
