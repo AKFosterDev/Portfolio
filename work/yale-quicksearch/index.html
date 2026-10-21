@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yale Quicksearch case study · Amanda K. Foster</title>
+<meta name="description" content="Redesigning Yale Library’s Quicksearch holdings and request pages for the move to Alma and Primo VE, from Figma to production.">
+<link rel="canonical" href="https://www.akfosterdev.com/work/yale-quicksearch/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yale Quicksearch case study · Amanda K. Foster">
+<meta property="og:description" content="Redesigning Yale Library’s Quicksearch holdings and request pages for the move to Alma and Primo VE, from Figma to production.">
+<meta property="og:url" content="https://www.akfosterdev.com/work/yale-quicksearch/">
+<meta property="og:image" content="https://www.akfosterdev.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F2F0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=DM+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#F2F2F0}
+img{max-width:100%}
+a{color:#141414}a:hover{color:#2E5A36}
+a:focus-visible,button:focus-visible{outline:3px solid #2E5A36;outline-offset:3px;border-radius:4px;box-shadow:0 0 0 6px #F2F2F0}
+section[style*="background: #141414"] a:focus-visible{outline-color:#F2F2F0;box-shadow:0 0 0 6px #141414}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.to-top{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:20;width:48px;height:48px;border-radius:50%;background:#141414;color:#F2F2F0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.18);transition:opacity .2s,visibility .2s}
+.to-top:hover{background:#2E5A36;color:#FFFFFF}
+.to-top:focus-visible{outline:3px solid #2E5A36;outline-offset:3px;box-shadow:0 0 0 6px #F2F2F0}
+html.js .to-top:not(.show){opacity:0;visibility:hidden}
+@media (prefers-reduced-motion:reduce){.to-top{transition:none}}
+@media print{.to-top{display:none}}
+.skip{position:absolute;left:16px;top:-60px;z-index:10;background:#141414;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-family:Montserrat,system-ui,sans-serif;font-weight:600}
+.skip:focus{top:16px;color:#fff}
+@media (max-width:700px){
+  h1{font-size:clamp(36px,10vw,56px)!important}
+  main h2{font-size:clamp(28px,7.5vw,40px)!important}
+  section,nav,footer>div,main>div{padding-left:max(16px,env(safe-area-inset-left,0px))!important;padding-right:max(16px,env(safe-area-inset-right,0px))!important}
+  section[aria-labelledby]>div{padding:28px 20px!important;border-radius:16px!important}
+  #home{padding-top:56px!important;padding-bottom:56px!important}
+  #home>div:first-child p:nth-of-type(2){letter-spacing:.24em!important}
+  section>div[style*="space-between"]>p:first-child{font-size:28px!important}
+}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<div style="font-family: 'Montserrat', system-ui, sans-serif; color: #141414; background: #F2F2F0; min-height: 100vh">
+
+<header style="border-bottom: 1px solid #DCDCD8">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" style="font-family: 'Alata', sans-serif; font-size: 22px; letter-spacing: 0.04em; text-decoration: none">AKF</a>
+<a href="/#work" style="font-size: 15px; font-weight: 600; text-decoration: none; padding: 12px 0"><span aria-hidden="true">←</span> All work</a>
+</nav>
+</header>
+
+<main id="main">
+<section style="max-width: 1000px; margin: 0 auto; padding: 88px 32px 48px; display: flex; flex-direction: column; gap: 22px">
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #2E5A36">Case study · Yale University Library</p>
+<h1 style="margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 60px; line-height: 1.06">Redesigning Quicksearch for a new library system</h1>
+<p style="margin: 0; max-width: 760px; font-size: 21px; line-height: 1.6; color: #3A3A38">Yale's library discovery platform needed new holdings and request pages when the library moved from Voyager to Alma and Primo VE. I worked on it from first mockups through production over more than 18 months.</p>
+<dl style="margin: 16px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 24px; border-top: 2px solid #141414; padding-top: 24px">
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Role</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">Software engineer, design and front end</dd></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Timeline</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">March 2023 – June 2026</dd></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Tools</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">Figma, Rails, Bootstrap 5, SCSS, RSpec</dd></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Team</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">Notch8 with Yale Library staff</dd></div>
+</dl>
+</section>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img src="/assets/quicksearch-figma.webp" width="2470" height="1500" alt="Figma mockups for the Quicksearch redesign: the holdings record page with copies and Request buttons, the request-an-item page, the approved color palette, and the mobile record view" style="display: block; width: 100%; height: auto; border-radius: 16px">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Designed in Figma: holdings record, request page, approved palette and mobile view</figcaption>
+</figure>
+</div>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 88px 32px 32px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">The problem</h2>
+<p style="flex: 999 1 480px; min-width: 0; margin: 0; font-size: 18px; line-height: 1.75; color: #2A2A28">Patrons find and request items through Quicksearch. The move to Alma and Primo VE changed the data behind every holdings record, so the pages that show where an item is and how to request it had to be redesigned without disrupting people who use them every day.</p>
+</section>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">What I did</h2>
+<ul style="flex: 999 1 480px; min-width: 0; margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.7; color: #2A2A28">
+<li>Created Figma mockups and design options, then built the approved designs</li>
+<li>Audited every page from 320 to 1680 pixels and fixed layout problems before they were reported</li>
+<li>Improved WCAG 2 Level AA conformance, including screen-reader-only text patterns</li>
+<li>Migrated Bootstrap 4 to 5, moved the stylesheets from Sass to SCSS and helped convert the templates from HAML to ERB</li>
+<li>Wrote the team's ticket, pull request and breakpoint testing templates</li>
+</ul>
+</section>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 28px; align-items: start">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img loading="lazy" decoding="async" src="/assets/quicksearch-record.webp" width="1328" height="2000" alt="The final catalog record page in Quicksearch: title and details, an Available Online section, and a Copies in the Library table with location, call number, status and a Request button" style="display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 28px rgba(0,0,0,0.10)">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Shipped: the final catalog record page</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img loading="lazy" decoding="async" src="/assets/quicksearch-request.webp" width="1417" height="1290" alt="The final Request an Item page in Quicksearch: the title, location, call number and availability, then delivery options to scan a chapter, pick up at a chosen library, or send to a home address" style="display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 28px rgba(0,0,0,0.10)">
+<figcaption style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Shipped: the final request page</figcaption>
+</figure>
+</div>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 32px 32px 88px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">Quality</h2>
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 18px; line-height: 1.75; color: #2A2A28">I started the project's Coveralls integration when overall coverage was 56.88%, then organized ticketed work to raise the weakest files.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">display_helper.rb</p><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 28px">17.55% → 96.91%</p></div>
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">user.rb</p><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 28px">37.14% → 97.73%</p></div>
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">application_helper.rb</p><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 28px">23.94% → 100%</p></div>
+</div>
+</div>
+</section>
+
+<section style="background: #141414; color: #F2F2F0">
+<div style="max-width: 1000px; margin: 0 auto; padding: 72px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 34px">Want to hear more about this project?</p>
+<a href="/#contact" style="font-size: 16px; font-weight: 600; text-decoration: none; color: #141414; background: #F2F2F0; padding: 16px 26px; border-radius: 999px">Get in touch</a>
+</div>
+</section>
+</main>
+</div>
+
+<a href="#top" class="to-top" aria-label="Back to top"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></a>
+<script>
+document.documentElement.classList.add('js');
+(function(){var b=document.querySelector('.to-top');function u(){b.classList.toggle('show',window.scrollY>600);}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
+</body>
+</html>
