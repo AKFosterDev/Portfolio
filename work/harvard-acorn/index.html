@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harvard ACORN case study · Amanda K. Foster</title>
+<meta name="description" content="Leading the front end of Harvard Library’s ACORN migration from Angular to React and Next.js in under eight weeks.">
+<link rel="canonical" href="https://www.akfosterdev.com/work/harvard-acorn/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Harvard ACORN case study · Amanda K. Foster">
+<meta property="og:description" content="Leading the front end of Harvard Library’s ACORN migration from Angular to React and Next.js in under eight weeks.">
+<meta property="og:url" content="https://www.akfosterdev.com/work/harvard-acorn/">
+<meta property="og:image" content="https://www.akfosterdev.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F2F0">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=DM+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#F2F2F0}
+img{max-width:100%}
+a{color:#141414}a:hover{color:#2E5A36}
+a:focus-visible{outline:3px solid #2E5A36;outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:16px;top:-60px;z-index:10;background:#141414;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-family:Montserrat,system-ui,sans-serif;font-weight:600}
+.skip:focus{top:16px;color:#fff}
+@media (max-width:700px){
+  h1{font-size:clamp(36px,10vw,56px)!important}
+  main h2{font-size:clamp(28px,7.5vw,40px)!important}
+  section,nav,footer>div,main>div{padding-left:max(16px,env(safe-area-inset-left,0px))!important;padding-right:max(16px,env(safe-area-inset-right,0px))!important}
+  section[aria-labelledby]>div{padding:28px 20px!important;border-radius:16px!important}
+  #home{padding-top:56px!important;padding-bottom:56px!important}
+  #home>div:first-child p:nth-of-type(2){letter-spacing:.24em!important}
+  section>div[style*="space-between"]>p:first-child{font-size:28px!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div style="font-family: 'Montserrat', system-ui, sans-serif; color: #141414; background: #F2F2F0; min-height: 100vh">
+
+<header style="border-bottom: 1px solid #DCDCD8">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="/" style="font-family: 'Alata', sans-serif; font-size: 22px; letter-spacing: 0.04em; text-decoration: none">AKF</a>
+<a href="/" style="font-size: 15px; font-weight: 600; text-decoration: none; padding: 12px 0">← All work</a>
+</nav>
+</header>
+
+<main id="main">
+<section style="max-width: 1000px; margin: 0 auto; padding: 88px 32px 48px; display: flex; flex-direction: column; gap: 22px">
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #2E5A36">Case study · Harvard University Library</p>
+<h1 style="margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 60px; line-height: 1.06">Moving a conservation records system to React in under eight weeks</h1>
+<p style="margin: 0; max-width: 760px; font-size: 21px; line-height: 1.6; color: #3A3A38">ACORN is the system Harvard Library's conservators use to track every object that enters the lab, from treatment proposals and approvals to reports. Its Angular 14 front end had reached end of life. I led the front end of the move to React 19 and Next.js 16, from July 1 to production on August 24, 2026.</p>
+<dl style="margin: 16px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; border-top: 2px solid #141414; padding-top: 24px">
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Role</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">Front-end lead</dd></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Timeline</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">July – August 2026</dd></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Stack</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">React 19, Next.js 16, TypeScript, Material UI, Node.js, MongoDB</dd></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Team</dt><dd style="margin: 0; font-size: 16px; font-weight: 600">Notch8 with Harvard Library conservation staff</dd></div>
+</dl>
+</section>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 32px">
+<div role="img" aria-label="Placeholder for a screenshot of the ACORN records list" style="height: 560px; border-radius: 16px; background: #E4E4E0; border: 2px dashed #B9B9B3; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 14px; color: #555552">[Screenshot coming: Records List]</div>
+</div>
+
+<section aria-label="Results" style="max-width: 1200px; margin: 0 auto; padding: 48px 32px 0">
+<div style="background: #141414; color: #F2F2F0; border-radius: 16px; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 34px">Under 8 weeks</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #CFCFCB">from project start to production</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 34px">100+</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #CFCFCB">pull requests merged across client and API</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 34px">~240</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #CFCFCB">Playwright end-to-end tests in CI</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 34px">WCAG 2.1 AA</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #CFCFCB">audit led and findings fixed</p></div>
+</div>
+</section>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 88px 32px 32px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">The problem</h2>
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 18px; font-size: 18px; line-height: 1.75; color: #2A2A28">
+<p style="margin: 0">Conservators rely on ACORN every day, so the new front end had to match the old one feature for feature before anyone could switch. That meant the full application: the records list, create and edit forms, proposals and approvals, item and treatment reports, advanced search, transfers, files and the admin lists.</p>
+<p style="margin: 0">It also had to keep the rules staff depend on: fields that only some roles can edit, warnings when someone else has a record open, and guards against losing unsaved work.</p>
+</div>
+</section>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">What I did</h2>
+<ul style="flex: 999 1 480px; min-width: 0; margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 14px; font-size: 18px; line-height: 1.7; color: #2A2A28">
+<li>Set up the React and Next.js app shell, routing, design tokens and shared component library that the rest of the migration followed</li>
+<li>Ported the full application to feature parity, working end to end from MongoDB schema changes through the API to the React UI</li>
+<li>Built PDF and Excel exports for treatment reports, including multilingual catalog data, and a rich-text editor for proposals and reports</li>
+<li>Wrote the project wiki and worked through review cycles with the library's conservation QA reviewer to confirm parity</li>
+</ul>
+</section>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; align-items: start">
+<div role="img" aria-label="Placeholder for a screenshot of the record edit form" style="height: 380px; border-radius: 16px; background: #E4E4E0; border: 2px dashed #B9B9B3; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 14px; color: #555552">[Screenshot coming: Edit Record form]</div>
+<div role="img" aria-label="Placeholder for a screenshot of a treatment report" style="height: 380px; border-radius: 16px; background: #E4E4E0; border: 2px dashed #B9B9B3; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 14px; color: #555552">[Screenshot coming: Treatment report]</div>
+</div>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 56px 32px 32px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">Accessibility</h2>
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 18px; font-size: 18px; line-height: 1.75; color: #2A2A28">
+<p style="margin: 0">I led a WCAG 2.1 AA audit of the new application and fixed what it found, setting a baseline in Material UI for focus order, skip navigation, dialog behavior and keyboard use across every migrated workflow.</p>
+<p style="margin: 0">The rich-text editor needed extra care: I added tab indentation, Escape to leave the editor, and correct focus inside dialogs, and stopped it from flagging unsaved changes the moment a form opened.</p>
+</div>
+</section>
+
+<section style="max-width: 1000px; margin: 0 auto; padding: 32px 32px 88px; display: flex; flex-wrap: wrap; gap: 48px">
+<h2 style="flex: 1 1 240px; margin: 0; font-family: 'Alata', sans-serif; font-weight: 400; font-size: 34px">Quality</h2>
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 18px; line-height: 1.75; color: #2A2A28">Moving fast only worked because every change was checked. I built the test suites and a GitHub Actions pipeline that blocks a pull request unless formatting, linting, TypeScript, unit and end-to-end tests all pass, and that rejects tests which pass only some of the time.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">End-to-end</p><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 28px">~240 tests</p><p style="margin: 0; font-size: 14px; color: #3A3A38">20 Playwright suites</p></div>
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Client unit</p><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 28px">~1,200</p><p style="margin: 0; font-size: 14px; color: #3A3A38">assertions</p></div>
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #555552">Server</p><p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 28px">426</p><p style="margin: 0; font-size: 14px; color: #3A3A38">spec cases</p></div>
+</div>
+</div>
+</section>
+
+<section style="background: #141414; color: #F2F2F0">
+<div style="max-width: 1000px; margin: 0 auto; padding: 72px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<p style="margin: 0; font-family: 'Alata', sans-serif; font-size: 34px">Have a front end that needs to move?</p>
+<a href="mailto:akfosterdev@gmail.com" style="font-size: 16px; font-weight: 600; text-decoration: none; color: #141414; background: #F2F2F0; padding: 16px 26px; border-radius: 999px">Email me</a>
+</div>
+</section>
+</main>
+</div>
+
+</body>
+</html>
